@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Schedule
 %define		pnam	At
@@ -5,7 +9,7 @@ Summary:	Schedule::At - an OS independent interface to 'at' Unix command
 Summary(pl):	Schedule::At - niezale¿ny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
 Version:	1.04
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -29,6 +33,7 @@ czasie.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Schedule
+%{perl_sitelib}/Schedule/At.pm
 %{_mandir}/man3/*
