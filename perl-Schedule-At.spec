@@ -4,8 +4,8 @@
 			# need access to working atd
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Schedule
-%define	pnam	At
+%define		pdir	Schedule
+%define		pnam	At
 Summary:	Schedule::At - an OS independent interface to 'at' UNIX command
 Summary(pl):	Schedule::At - niezale¿ny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
