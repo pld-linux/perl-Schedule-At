@@ -4,8 +4,8 @@
 Summary:	Schedule::At perl module
 Summary(pl):	Modu³ perla Schedule::At
 Name:		perl-Schedule-At
-Version:	1.02
-Release:	8
+Version:	1.03
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -41,6 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{perl_sitelib}/Schedule/At.pm
-%{perl_sitelib}/auto/Schedule/At
 %{_mandir}/man3/*
+%{perl_sitelib}/Schedule/At.pm
