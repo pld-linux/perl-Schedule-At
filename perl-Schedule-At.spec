@@ -33,7 +33,7 @@ czasie.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 # You need access to working atd to perform the tests...
