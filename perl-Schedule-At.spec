@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Schedule
 %define	pnam	At
-%include	/usr/lib/rpm/macros.perl
 Summary:	Schedule-At perl module
 Summary(pl):	Modu³ perla Schedule-At
 Name:		perl-Schedule-At
 Version:	1.02
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Schedule-At udostêpnia niezale¿ny od platformy interfejs do polecenia
 'at'.
 
 %prep
-%setup -q -n Schedule-At-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
