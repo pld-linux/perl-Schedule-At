@@ -31,7 +31,7 @@ czasie.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 # You need access to working atd to perform the tests...
