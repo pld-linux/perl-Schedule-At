@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Schedule-At
 Name:		perl-Schedule-At
 Version:	1.02
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Schedule/Schedule-At-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Schedule/Schedule-At-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,10 +15,11 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Schedule-At provides an OS independent interface to 'at' Unix command. 
+Schedule-At provides an OS independent interface to 'at' Unix command.
 
 %description -l pl
-Schedule-At udostêpnia niezale¿ny od platformy interfejs do polecenia 'at'.
+Schedule-At udostêpnia niezale¿ny od platformy interfejs do polecenia
+'at'.
 
 %prep
 %setup -q -n Schedule-At-%{version}
