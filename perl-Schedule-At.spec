@@ -26,7 +26,7 @@ Schedule-At udostêpnia niezale¿ny od platformy interfejs do polecenia
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
