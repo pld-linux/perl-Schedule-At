@@ -1,6 +1,7 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test"
+			# need access to working atd
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Schedule
@@ -10,7 +11,8 @@ Summary(pl):	Schedule::At - niezale¿ny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
 Version:	1.04
 Release:	4
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	531e72d6b5cb3c69926135998348fa83
@@ -36,13 +38,13 @@ czasie.
 	INSTALLDIRS=vendor
 %{__make}
 
-# You need access to working atd to perform the tests...
 %{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
