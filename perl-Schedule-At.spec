@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Schedule
@@ -37,7 +37,7 @@ czasie.
 %{__make}
 
 # You need access to working atd to perform the tests...
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
