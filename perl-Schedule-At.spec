@@ -1,27 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Schedule
 %define		pnam	At
-Summary:	Schedule::At Perl module
-Summary(cs):	Modul Schedule::At pro Perl
-Summary(da):	Perlmodul Schedule::At
-Summary(de):	Schedule::At Perl Modul
-Summary(es):	Módulo de Perl Schedule::At
-Summary(fr):	Module Perl Schedule::At
-Summary(it):	Modulo di Perl Schedule::At
-Summary(ja):	Schedule::At Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Schedule::At ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Schedule::At
-Summary(pl):	Modu³ Perla Schedule::At
-Summary(pt):	Módulo de Perl Schedule::At
-Summary(pt_BR):	Módulo Perl Schedule::At
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Schedule::At
-Summary(sv):	Schedule::At Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Schedule::At
-Summary(zh_CN):	Schedule::At Perl Ä£¿é
+Summary:	Schedule::At - an OS independent interface to 'at' Unix command
+Summary(pl):	Schedule::At - niezale¿ny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
-Version:	1.03
-Release:	2
-License:	GPL
+Version:	1.04
+Release:	1
+License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
@@ -30,11 +15,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Schedule::At provides an OS independent interface to 'at' Unix command.
+This modules provides an OS independent interface to 'at', the Unix
+command that allows you to execute commands at a specified time.
 
 %description -l pl
-Schedule::At udostêpnia niezale¿ny od platformy interfejs do polecenia
-'at'.
+Schedule::At udostêpnia niezale¿ny od platformy interfejs do 'at',
+Uniksowego polecenia, które pozwala Ci na wykonanie komendy o okre¶lonym
+czasie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
