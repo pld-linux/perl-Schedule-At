@@ -9,13 +9,13 @@
 Summary:	Schedule::At - an OS independent interface to 'at' UNIX command
 Summary(pl):	Schedule::At - niezale¿ny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
-Version:	1.04
-Release:	5
+Version:	1.06
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	531e72d6b5cb3c69926135998348fa83
+# Source0-md5:	f482cbc7339217668ae8436f1af83994
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
