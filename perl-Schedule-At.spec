@@ -7,7 +7,7 @@
 %define		pdir	Schedule
 %define		pnam	At
 Summary:	Schedule::At - an OS independent interface to 'at' UNIX command
-Summary(pl):	Schedule::At - niezaleøny od platformy interfejs do polecenia 'at'
+Summary(pl.UTF-8):   Schedule::At - niezale≈ºny od platformy interfejs do polecenia 'at'
 Name:		perl-Schedule-At
 Version:	1.06
 Release:	1
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This modules provides an OS independent interface to 'at', the UNIX
 command that allows you to execute commands at a specified time.
 
-%description -l pl
-Schedule::At udostÍpnia niezaleøny od platformy interfejs do 'at',
-uniksowego polecenia, ktÛre pozwala na wykonanie komendy o okre∂lonym
+%description -l pl.UTF-8
+Schedule::At udostƒôpnia niezale≈ºny od platformy interfejs do 'at',
+uniksowego polecenia, kt√≥re pozwala na wykonanie komendy o okre≈õlonym
 czasie.
 
 %prep
